@@ -81,7 +81,7 @@ function flipCard() {
           pauseTime();
 
           let resultadoP = document.getElementById("resultado");
-          resultadoP.textContent = `Parabéns! Tempo de jogo: ${calculateTime(
+          resultadoP.textContent = `Parabéns! Tempo de Jogo: ${calculateTime(
             time
           )}`;
 
@@ -169,8 +169,8 @@ function compararTime(time) {
   let timeStorage = localStorage.getItem("time");
   let timeA = calculateTime(time);
 
-  let time1 = new Date("2022-01-01 " + timeStorage);
-  let time2 = new Date("2022-01-01 " + timeA);
+  let time1 = new Date("2023-01-01 " + timeStorage);
+  let time2 = new Date("2023-01-01 " + timeA);
 
   console.log(time1);
   console.log(time2);

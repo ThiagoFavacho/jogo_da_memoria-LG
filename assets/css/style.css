@@ -13,7 +13,6 @@ body {
   background-color: #eeeeee;
   flex-direction: column;
   gap: 20px;
-  background-image: url('/assets/img/planofundo.png');
 }
 
 .card {
@@ -30,19 +29,18 @@ body {
 }
 
 .icon {
-  width: 110px;
-  height: 110px;
+  width: 100%;
+  height: 100%;
 }
 
 .card_back,
 .card_front {
-  width: 100%;
-  height: 100%;
+  width: 118px;
+  height: 118px;
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
   box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.5);
   backface-visibility: hidden; /* esconde quando inverte eixo */
   -webkit-backface-visibility: hidden;
@@ -55,14 +53,8 @@ body {
   -moz-transform: rotateY(180deg);
 }
 
-.card_back {
-  background-color: #101c2c;
-  /* display: none; */
-}
-
 .card_front {
   transform: rotateY(180deg); /* inicializa com o eixo Y invertido*/
-  background-color: #101c2c;
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
 }
@@ -133,18 +125,18 @@ body {
 #gameBoard {
   max-width: 960px;
   display: grid;
-  grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr 1fr;
+  grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr 1fr 1fr;
   gap: 20px;
 }
 
 @media (max-width: 1400px) {
   .card {
-    width: 120px;
-    height: 120px;
+    width: 115px;
+    height: 115px;
   }
   .icon {
-    width: 90px;
-    height: 90px;
+    width: 120px;
+    height: 120px;
   }
 }
 
