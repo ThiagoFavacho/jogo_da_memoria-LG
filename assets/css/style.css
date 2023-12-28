@@ -57,7 +57,6 @@ body {
 
 .card_front {
   transform: rotateY(180deg); /* inicializa com o eixo Y invertido*/
-  background-color: #101c2c;
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
 }
